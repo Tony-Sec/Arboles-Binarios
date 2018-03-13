@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 28/07/2017.
-//
-
 #ifndef ARBOLES_EDNL_A_BIN_VECTORIAL_PSEU_HPP
 #define ARBOLES_EDNL_A_BIN_VECTORIAL_PSEU_HPP
 
