@@ -1,5 +1,5 @@
-#ifndef ARBOLES_EDNL_A_BIN_VECTORIAL_PSEU_HPP
-#define ARBOLES_EDNL_A_BIN_VECTORIAL_PSEU_HPP
+#ifndef A_BIN_VECTORIAL_PSEU_HPP
+#define A_BIN_VECTORIAL_PSEU_HPP
 
 #include <cassert>
 #include <algorithm>
@@ -271,4 +271,4 @@ int Abin<T>::nOdo (const T& e) const{
     return 0;
 }
 
-#endif //ARBOLES_EDNL_A_BIN_VECTORIAL_PSEU_HPP
+#endif //A_BIN_VECTORIAL_PSEU_HPP
