@@ -12,6 +12,6 @@ Esta carpeta contiene un ejemplo de como utilizar la libreria **E_S_Abin.hpp** c
 Ejemplo del Árbol guardado en *abin.dat*:      
 ![Abin](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
 
-//Árbol Binario en preorden tomando como fin #  
+//Árbol Binario en preorden tomando como fin #
 #
 a b d h # # i # # e # # c f # # g j # # k # #
