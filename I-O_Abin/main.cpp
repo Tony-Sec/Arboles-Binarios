@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../Representaciones_Abin/E_S_Abin.hpp"                //I-O A_bin
+#include "../I_O_Abin.hpp"                //I-O A_bin
 
 using namespace std;
 
