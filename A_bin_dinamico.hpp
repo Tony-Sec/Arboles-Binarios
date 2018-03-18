@@ -45,7 +45,9 @@ private:
         nodo padre, hizq, hder;
 
         celda(const T &e, nodo p = NODO_NULO) : elto(e),
-                                                padre(p), hizq(NODO_NULO), hder(NODO_NULO) {}
+                                                padre(p), 
+                                                hizq(NODO_NULO), 
+                                                hder(NODO_NULO) {}
     };
 
     nodo r;
