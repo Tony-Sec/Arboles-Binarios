@@ -11,7 +11,11 @@ int main() {
     Abin<T_elem> A (20), B(20);
 /********************************************************Guardar Arbol binario en abin.dat***************************************/
     cout << "Introducir A_bin --> abin.dat" << endl;
-    rellenarAbin(A,fin);            //std::cin
+    try {
+        rellenarAbin(A,fin);            //std::cin
+    }catch (Abin<T_elem>::Error e){
+        cout<<e.why();
+    }
     ofstream file_out("abin.dat");
     imprimirAbin(file_out,A,fin);
     file_out.close();
@@ -20,7 +24,11 @@ int main() {
 /********************************************************Leer Arbol binario en abin.dat******************************************/
     cout <<"abin.dat --> Extraer A_bin"<<endl;
     ifstream file_input("abin.dat");
-    rellenarAbin(file_input,B);     //std::cout
+    try {
+        rellenarAbin(file_input,B);     //std::cout
+    }catch (Abin<T_elem>::Error e){
+        cout<<e.why();
+    }
     file_input.close();
 
 
