@@ -1,7 +1,6 @@
 #ifndef ABIN_HPP
 #define ABIN_HPP
 
-#include <cassert>
 
 using namespace std;
 
@@ -45,8 +44,8 @@ private:
         nodo padre, hizq, hder;
 
         celda(const T &e, nodo p = NODO_NULO) : elto(e),
-                                                padre(p), 
-                                                hizq(NODO_NULO), 
+                                                padre(p),
+                                                hizq(NODO_NULO),
                                                 hder(NODO_NULO) {}
     };
 
@@ -67,30 +66,30 @@ inline Abin<T>::Abin() : r(NODO_NULO) {}
 
 template<typename T>
 inline void Abin<T>::insertarRaizB(const T &e) {
-    if(r == NODO_NULO) throw Error("Arbol vacio");
+    if(r != NODO_NULO) throw Error("El Arbol esta vacio");
     r = new celda(e);
 }
 
 template<typename T>
 inline void Abin<T>::insertarHijoIzqdoB(Abin<T>::nodo n,const T &e) {
-    if(n != NODO_NULO) throw Error("Imposible insertar Hijo Izq :el nodo no es valido,debe ser nulo");
-    if(n->hizq == NODO_NULO)throw Error("Imposible insertar Hijo Izq :hijo izq no existe");
+    if(n == NODO_NULO) throw Error("Imposible insertar Hijo Izq :el nodo no es valido,debe ser nulo");
+    if(n->hizq != NODO_NULO)throw Error("Imposible insertar Hijo Izq :hijo izq no existe");
     n->hizq = new celda(e, n);
 }
 
 template<typename T>
 inline void Abin<T>::insertarHijoDrchoB(Abin<T>::nodo n, const T &e) {
-    if(n != NODO_NULO) throw Error("Imposible insertar Hijo Der :el nodo no es valido,debe ser nulo");
-    if(n->hder == NODO_NULO)throw Error("Imposible insertar Hijo Der:hijo der no existe");
+    if(n == NODO_NULO) throw Error("Imposible insertar Hijo Der :el nodo no es valido,debe ser nulo");
+    if(n->hder != NODO_NULO)throw Error("Imposible insertar Hijo Der:hijo der no existe");
     n->hder = new celda(e, n);
 }
 
 template<typename T>
 inline void Abin<T>::eliminarHijoIzqdoB(Abin<T>::nodo n) {
-    if(n != NODO_NULO) throw Error("Imposible eliminar Hijo Izq :el nodo no es valido,debe ser nulo");
-    if(n->hizq != NODO_NULO)throw Error("Imposible eliminar Hijo Izq:el nodo tiene hijo izq");
+    if(n == NODO_NULO) throw Error("Imposible eliminar Hijo Izq :el nodo no es valido,debe ser nulo");
+    if(n->hizq == NODO_NULO)throw Error("Imposible eliminar Hijo Izq:el nodo tiene hijo izq");
 
-    if(n->hizq->hizq == NODO_NULO &&n->hizq->hder == NODO_NULO)
+    if(n->hizq->hizq != NODO_NULO &&n->hizq->hder != NODO_NULO)
         throw Error("Imposible eliminar Hijo Izq:El  hijo izq del nodo es hoja");
     delete (n->hizq);
     n->hizq = NODO_NULO;
@@ -98,9 +97,9 @@ inline void Abin<T>::eliminarHijoIzqdoB(Abin<T>::nodo n) {
 
 template<typename T>
 inline void Abin<T>::eliminarHijoDrchoB(Abin<T>::nodo n) {
-    if(n != NODO_NULO) throw Error("Imposible eliminar Hijo Der :el nodo no es valido,debe ser nulo");
-    if(n->hder != NODO_NULO)throw Error("Imposible eliminar Hijo Der:el nodo tiene hijo der");
-    if(n->hder->hizq == NODO_NULO && n->hder->hder == NODO_NULO)
+    if(n == NODO_NULO) throw Error("Imposible eliminar Hijo Der :el nodo no es valido,debe ser nulo");
+    if(n->hder == NODO_NULO)throw Error("Imposible eliminar Hijo Der:el nodo tiene hijo der");
+    if(n->hder->hizq != NODO_NULO && n->hder->hder != NODO_NULO)
         throw Error("Imposible eliminar Hijo Der:El  hijo der del nodo es hoja");
     delete (n->hder);
     n->hder = NODO_NULO;
@@ -108,8 +107,8 @@ inline void Abin<T>::eliminarHijoDrchoB(Abin<T>::nodo n) {
 
 template<typename T>
 inline void Abin<T>::eliminarRaizB() {
-    if(r != NODO_NULO)throw Error("Imposible eliminar Raiz :Arbol no vacío");
-    if(r->hizq == NODO_NULO && r->hder == NODO_NULO)
+    if(r == NODO_NULO)throw Error("Imposible eliminar Raiz :Arbol no vacío");
+    if(r->hizq != NODO_NULO && r->hder != NODO_NULO)
         throw Error("Imposible eliminar Raiz:La raiz es hoja");
     delete (r);
     r = NODO_NULO;
@@ -125,13 +124,13 @@ inline bool Abin<T>::arbolVacioB() const { return (r == NODO_NULO); }
 
 template<typename T>
 inline const T &Abin<T>::elemento(Abin<T>::nodo n) const {
-    assert(n != NODO_NULO);
+    if (n == NODO_NULO)throw Error("No se puede acceder al nodo");
     return n->elto;
 }
 
 template<typename T>
 inline T &Abin<T>::elemento(Abin<T>::nodo n) {
-    assert(n != NODO_NULO);
+    if (n == NODO_NULO)throw Error("No se puede acceder al nodo");
     return n->elto;
 }
 
@@ -143,21 +142,21 @@ inline typename Abin<T>::nodo Abin<T>::raizB() const {
 template<typename T>
 inline
 typename Abin<T>::nodo Abin<T>::padreB(Abin<T>::nodo n) const {
-    assert(n != NODO_NULO);
+    if(n == NODO_NULO)throw Error("Padre es nulo");
     return n->padre;
 }
 
 template<typename T>
 inline
 typename Abin<T>::nodo Abin<T>::hijoIzqdoB(Abin<T>::nodo n) const {
-    assert(n != NODO_NULO);
+    if(n == NODO_NULO)throw Error("Hijo Izquierdo es nulo");
     return n->hizq;
 }
 
 template<typename T>
 inline
 typename Abin<T>::nodo Abin<T>::hijoDrchoB(Abin<T>::nodo n) const {
-    assert(n != NODO_NULO);
+    if (n == NODO_NULO)throw Error("Hijo Derecho es nulo");;
     return n->hder;
 }
 
