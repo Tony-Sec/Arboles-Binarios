@@ -14,7 +14,7 @@ int main() {
     cout <<"abin.dat --> Extraer A_bin"<<endl;
 
 
-    ifstream file_input("abin.dat");
+    ifstream file_input("..\\I-O_Abin\\abin.dat");
     try {
         rellenarAbin(file_input,A);
     }catch (Abin<T_elem>::Error e){
@@ -35,7 +35,7 @@ int main() {
 
     /********************************************************Leer Arbol binario en abin2.dat******************************************/
 
-    ifstream file_input2("abin2.dat");
+    ifstream file_input2("..\\I-O_Abin\\abin2.dat");
     try {
         rellenarAbin(file_input2,B);
     }catch (Abin<T_elem>::Error e){
