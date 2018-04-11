@@ -20,8 +20,9 @@ Este repositorio contiene una serie de Bibliotecas en `C++` :
   * **Ejercicios_basicos_Abin**  
       Ejercicios basicos sobre Arboles Binarios.
    * **Ejercicios_avanzados_Abin**  
-      Ejercicios avanzados sobre Arboles Binarios.  
-    **-----------------------------------------------------------------------------------------------------------------------------**  
+      Ejercicios avanzados sobre Arboles Binarios.     
+      
+      ***************************************************************************************************************************
               
       Especificación semántica y sintáctica del TAD Árbol Binario independiente de la representación elejida:  
       * *`Abin ()`*  
