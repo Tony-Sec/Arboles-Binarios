@@ -2,14 +2,12 @@
 ## Ejercicios Avanzados
 
 Esta carpeta contiene:  
-  *  *`Ejercicios_basicos_Abin.hpp`*  
+  *  *`Ejercicios_avanzados_Abin.hpp`*  
     
       Biblioteca con las funciones necesarias para resolver los siguientes problemas:  
-      * Calcular el **número de nodos**.  
-      * Calcular la **altura**.  
-      * Determinar la **profundidad de un nodo**.    
-      * Calcular el **nivel de desequilibrio** (la diferencia entre las alturas de los subárboles del mismo).  
-      * Determinar si es **pseudocompleto** (si en el penúltimo nivel del mismo cada uno de los nodos tiene dos hijos o ninguno).  
+      * Determinar si dos árboles binarios son **similares**.  
+      * Determinar si es árbol **reflejado**.  
+      * Almacenar un **Árbol de expresión** y evaluar lo.
       
   * *`main.cpp`*  
       Ejemplo de uso de la anterior Biblioteca.  
