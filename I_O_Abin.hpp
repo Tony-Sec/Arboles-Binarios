@@ -1,7 +1,7 @@
 #ifndef ARBOLES_EDNL_E_S_ABIN_HPP
 #define ARBOLES_EDNL_E_S_ABIN_HPP
 
-#include"A_bin_vectorial_pseu.hpp"
+#include"A_bin_dinamico.hpp"
 #include <cassert>
 #include <iostream>
 #include <fstream>
