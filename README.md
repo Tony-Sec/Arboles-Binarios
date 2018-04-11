@@ -26,7 +26,7 @@ Este repositorio contiene una serie de Bibliotecas en `C++` :
               
       Especificación semántica y sintáctica del TAD Árbol Binario independiente de la representación elejida:  
       * *`Abin ()`*  
-      Post: Crea y devuelve un árbol vacío.  
+      [Post]: Crea y devuelve un árbol vacío.  
       * *`void insertarRaizB (const T& e)`*  
       Pre: El árbol está vacío.  
       Post: Inserta el nodo raíz cuyo contenido será e.  
