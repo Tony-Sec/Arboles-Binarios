@@ -1,5 +1,5 @@
-#ifndef ARBOLES_EDNL_E_S_ABIN_HPP
-#define ARBOLES_EDNL_E_S_ABIN_HPP
+#ifndef I_O_ABIN_HPP
+#define I_O_ABIN_HPP
 
 #include"A_bin_dinamico.hpp"
 #include <cassert>
@@ -159,4 +159,4 @@ void imprimirDescendientes (ostream& os, typename Abin<T>::nodo r, const Abin<T>
         os << fin << ' ';
 }
 
-#endif //ARBOLES_EDNL_E_S_ABIN_HPP
+#endif //I_O_ABIN_HPP
