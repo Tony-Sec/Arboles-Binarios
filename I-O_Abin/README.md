@@ -1,10 +1,9 @@
 # Estructura de Datos No Lineales
 ## Entrada y Salida de Arboles Binarios
 
-Esta carpeta contiene un ejemplo de como utilizar la libreria **E_S_Abin.hpp** contienen:
-
+Esta carpeta contiene:  
   * **main.cpp**  
-      Biblioteca para representación de Árbol Binario en una estructura vectorial pseudoestática.  
+      Ejemplo de como utilizar la Biblioteca *`I_O_Abin.hpp`*. 
         
   * **abin.dat**  
       Archivo que guarda el Árbol Binario.  
@@ -15,3 +14,4 @@ Ejemplo del Árbol guardado en *abin.dat*:
 //Árbol Binario en preorden tomando como fin #
 #
 a b d h # # i # # e # # c f # # g j # # k # #
+    
