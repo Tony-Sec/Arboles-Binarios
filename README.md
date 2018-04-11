@@ -51,8 +51,8 @@ Este repositorio contiene una serie de Bibliotecas en `C++` :
       Post: Destruye el nodo raíz. El árbol queda vacío  
       * *`bool arbolVacioB () const`*  
       Post: Devuelve true si el árbol está vacío y false en caso contrario.  
-      * *`const T& elemento(nodo n) const  
-         T& elemento(nodo n)`*  
+      * *`const T& elemento(nodo n) const`*  
+        *`T& elemento(nodo n)`*  
       Pre: n es un nodo del árbol.  
       Post: Devuelve el elemento del nodo n.  
       * *`nodo raízB () const`*  
