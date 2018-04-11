@@ -37,9 +37,10 @@ Este repositorio contiene una serie de Bibliotecas en `C++` :
       Pre: n es un nodo del árbol que no tiene hijo derecho.  
       Post: Inserta el elemento e como hijo derecho del nodo n.  
       * *`void eliminarHijoIzqdoB (nodo n)`*  
-      Pre: n es un nodo del árbol.  
-            Existe hijoIzqdoB(n) y es una hoja.  
-      Post: Destruye el hijo izquierdo del nodo n.  
+      Existe hijoIzqdoB(n) y es una hoja.  
+        
+        Pre: n es un nodo del árbol.  
+        Post: Destruye el hijo izquierdo del nodo n.  
       * *`void eliminarHijoDrchoB (nodo n)`*  
       Existe hijoDrchoB(n) y es una hoja.  
         
