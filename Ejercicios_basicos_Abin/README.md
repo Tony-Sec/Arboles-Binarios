@@ -12,7 +12,9 @@ Esta carpeta contiene una Bibliotecas con los siguientes ejercicios:
       * Determinar si es **pseudocompleto** (si en el penúltimo nivel del mismo cada uno de los nodos tiene dos hijos o ninguno).  
       
   * *`main.cpp`*  
-      Ejemplo de uso de la anterior Biblioteca.
+      Ejemplo de uso de la anterior Biblioteca.  
+        
+      **Nota:** Se utiliza la implementación Vectorial dinámica del árbol binario,sin embargo se puede utilizar con otra implementación, ya que,las diferentes representaciones son independientes de la implementacion utilizada.  
    
 ![Texto alternativo](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
 Proyecto destinado a la enseñanza de Estructuras de datos no lineales
