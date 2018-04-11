@@ -7,7 +7,7 @@ Esta carpeta contiene:
       Biblioteca con las funciones necesarias para resolver los siguientes problemas:  
       * Determinar si dos árboles binarios son **similares**.  
       * Determinar si es árbol **reflejado**.  
-      * Almacenar un **Árbol de expresión** y evaluar lo.
+      * Almacenar un **Árbol de expresión y evaluar lo**.
       
   * *`main.cpp`*  
       Ejemplo de uso de la anterior Biblioteca.  
