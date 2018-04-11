@@ -1,7 +1,10 @@
 # Arboles-Binarios
 ## Ejercicios Avanzados
 
-Esta carpeta contiene una Biblioteca *`Ejercicios_basicos_Abin.hpp`* con las funciones necesarias para resolver los siguientes problemas:  
+Esta carpeta contiene:  
+  *  *`Ejercicios_basicos_Abin.hpp`*  
+    
+      Biblioteca con las funciones necesarias para resolver los siguientes problemas:  
       * Calcular el **número de nodos**.  
       * Calcular la **altura**.  
       * Determinar la **profundidad de un nodo**.    
