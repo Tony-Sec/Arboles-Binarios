@@ -6,9 +6,8 @@
 #include "../Ejercicios_basicos_Abin/Ejercicios_basicos_Abin.hpp"
 
 /**********************************************************************************Árboles Binarios Similares*/
-/* Que sean similares ambos árboles no quiere decir que sean identicos
- * ,es decir, que pueden tener igual estructura pero
- * el contenido del nodo es diferente
+/* Que sean similares ambos árboles no quiere decir que sean identicos ,es decir,
+ * que pueden tener igual estructura pero el contenido del nodo es diferente
  */
 template <typename T>
 bool similaresrec(const Abin<T>& A,const Abin<T>& B,typename Abin<T>::nodo a,typename Abin<T>::nodo b){
@@ -57,6 +56,33 @@ Abin<T> reflejado(Abin<T>& A){
 }
 
 /********************************************************************************Árbol Binario de expresión aritmetica*/
+
+struct nodoArit{
+    char operador;
+    double operando;
+    nodoArit(char operador = '#', double operando = 0) : operador(operador),
+                                                         operando(operando){}
+};
+
+istream& operator >>(istream &i, nodoArit& n){
+    cout << "Introducir valores para operador y despues para operando: ";
+    i >> n.operador >> n.operando;
+    i.ignore();
+    return i;
+}
+ostream& operator <<(ostream &o,const nodoArit& n){
+    o << n.operador << n.operando;
+    return o;
+}
+bool operator !=(const nodoArit& izq,const nodoArit& der){
+    bool ret;
+    if(izq.operador == der.operador && izq.operando == der.operando)
+        ret = false;
+    else
+        ret = true;
+    return ret;
+}
+
 template <typename T>
 int exp_Abinrec (Abin<T>& A,typename Abin<T>::nodo n){
 
@@ -73,50 +99,12 @@ int exp_Abinrec (Abin<T>& A,typename Abin<T>::nodo n){
         default:
             cout<<"ERROR!"<<endl;
     }
-
     return 0;
-
 }
 
 template <typename T>
 int exp_Abin (Abin<T>& A){
     return exp_Abinrec(A,A.raizB());
 }
-
-//Falta definir  la estructura para cada nodo y los operadores de entrada salida para el arbol de expresion.
-
-
-/**********************************************************************************************************************/
-/***************************************************Examenes Parcial I ************************************************/
-/**********************************************************************************************************************/
-
-/*Renegados*/
-
-template<typename T>
-int renegadesrec(Abin<T>& A,typename Abin<T>::nodo n,int& ntrue,int& nfalse) {
-
-    if(n==Abin<T>::NODO_NULO) return min(ntrue,nfalse);
-    else {
-        if (A.elemento(n)=='1') ntrue++;
-        else nfalse++;
-    }
-    return  max(renegadesrec(A, A.hijoIzqdoB(n), ntrue, nfalse),renegadesrec(A, A.hijoDrchoB(n), ntrue, nfalse));
-
-}
-
-template<typename T>
-int renegades(Abin<T>& A){
-    int ntrue=0;
-    int nfalse=0;
-    int renegades=renegadesrec(A,A.raizB(),ntrue,nfalse);
-    if(renegades*2==numero_nodos_abin(A)){
-        cout<<"Arbol sin renegados!!!"<<endl;
-        renegades=0;
-    }
-    return renegades;
-}
-
-
-
 
 #endif //EJERCICIOS_AVANZADOS_ABIN_HPP
