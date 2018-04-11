@@ -15,7 +15,11 @@ Este repositorio contiene una serie de Bibliotecas en `C++` :
  Y una serie de carpetas:  
    
   * **I-O_Abin**  
-      Ejemplo de como usar la biblioteca deEntrada/Salida.   
+      Ejemplo de como usar la biblioteca de Entrada/Salida.
+  * **Ejercicios_basicos_Abin**  
+      Ejercicios basicos sobre Arboles Binarios.
+   * **Ejercicios_avanzados_Abin**  
+      Ejercicios avanzados sobre Arboles Binarios.    
   
 ![Texto alternativo](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
 Proyecto destinado a la enseñanza de Estructuras de datos no lineales
