@@ -36,35 +36,36 @@ Este repositorio contiene una serie de Bibliotecas en `C++` :
       * *`void insertarHijoDrchoB (nodo n, const T& e)`*  
       Pre: n es un nodo del árbol que no tiene hijo derecho.  
       Post: Inserta el elemento e como hijo derecho del nodo n.  
-      * *`void eliminarHijoIzqdoB (nodo n)`**
+      * *`void eliminarHijoIzqdoB (nodo n)`*  
       Pre: n es un nodo del árbol.  
-          Existe hijoIzqdoB(n) y es una hoja.  
+            Existe hijoIzqdoB(n) y es una hoja.  
       Post: Destruye el hijo izquierdo del nodo n.  
-      * *`void eliminarHijoDrchoB (nodo n)`**  
-      Pre: n es un nodo del árbol.  
-          Existe hijoDrchoB(n) y es una hoja.  
-      Post: Destruye el hijo derecho del nodo n.  
-      * *`void eliminarRaizB ()`**  
+      * *`void eliminarHijoDrchoB (nodo n)`*  
+      Existe hijoDrchoB(n) y es una hoja.  
+        
+        Pre: n es un nodo del árbol.  
+        Post: Destruye el hijo derecho del nodo n.  
+      * *`void eliminarRaizB ()`*  
       Pre: El árbol no está vacío y raizB() es una hoja.  
       Post: Destruye el nodo raíz. El árbol queda vacío  
-      * *`bool arbolVacioB () const`**  
+      * *`bool arbolVacioB () const`*  
       Post: Devuelve true si el árbol está vacío y false en caso contrario.  
-      * *`const T& elemento(nodo n) const`**  
+      * *`const T& elemento(nodo n) const`*  
       * *`T& elemento(nodo n)`**  
       Pre: n es un nodo del árbol.  
       Post: Devuelve el elemento del nodo n.  
       * *`nodo raízB () const`**  
       Post: Devuelve el nodo raíz del árbol. Si el árbol está vacío, devuelve
       NODO_NULO.   
-      * *`nodo padreB (nodo n) const`**  
+      * *`nodo padreB (nodo n) const`*  
       Pre: n es un nodo del árbol.  
       Post: Devuelve el padre del nodo n. Si n es el nodo raíz, devuelve
       NODO_NULO.  
-      * *`nodo hijoIzqdoB (nodo n) const`**  
+      * *`nodo hijoIzqdoB (nodo n) const`*  
       Pre: n es un nodo del árbol.  
       Post: Devuelve el nodo hijo izquierdo del nodo n. Si no existe, devuelve
       NODO_NULO.  
-      * *`nodo hijoDrchoB (nodo n) const`**  
+      * *`nodo hijoDrchoB (nodo n) const`*  
       Pre: n es un nodo de A.  
       Post: Devuelve el nodo hijo derecho del nodo n. Si no existe, devuelve
       NODO_NULO.  
