@@ -16,9 +16,6 @@ Este repositorio contiene una serie de Bibliotecas en `C++` :
       Biblioteca para representación en una estructura vectorial mediante posiciones relativas.  
   * **A_bin_dinamico.hpp**  
       Biblioteca para representación en una estrucura dinámica mediante celdas enlazadas con punteros.  
-      
-  * **E_S_Abin.hpp**  
-      Biblioteca para pruebas de Entrada y Salida de Árboles Binarios que muestra o guarda Árboles Binarios.  
    
  Y una serie de carpetas:  
    
