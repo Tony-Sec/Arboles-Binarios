@@ -3,13 +3,13 @@
 
 Esta carpeta contiene:  
 
-  * **E_S_Abin.hpp**  
+  * **`I_O_Abin.hpp`**  
       Biblioteca para pruebas de Entrada y Salida de Árboles Binarios que muestra o guarda Árboles Binarios.  
       
-  * **main.cpp**  
+  * **`main.cpp`**  
       Ejemplo de como utilizar la Biblioteca *`I_O_Abin.hpp`*. 
         
-  * **abin.dat**  
+  * **`abin.dat`**  
       Archivo que guarda el Árbol Binario.  
       
 Ejemplo del Árbol guardado en *abin.dat*:      
