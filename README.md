@@ -1,6 +1,13 @@
 # Estructura de Datos No Lineales
-## Arboles-Binarios
-
+## Arboles-Binarios  
+  
+  ***************************************************************************************************************************
+  Bienvenido !!!!!!!
+  
+  Para seguir esta guía[en construcción] he subido a este repositorio algunos ejercicios frecuentes que usan Árboles Binarios.
+  Estan dividios en Ejercicios basicos y avanzados.Buen código!!!!!
+  ***************************************************************************************************************************
+  
 Este repositorio contiene una serie de Bibliotecas en `C++` :
   
   * **A_bin_vectorial_pseu.hpp**  
