@@ -10,7 +10,7 @@ const T_elem fin='#';
 int main() {
 
     Abin<T_elem> R;
-    /********************************************************Leer Arbol binario en abin_renegades.dat******************************************/
+    /***********************************************Leer Arbol binario en abin_renegades.dat**************************************/
 
     ifstream file_input("..\\..\\I-O_Abin\\abin_renegades.dat");
     try {
