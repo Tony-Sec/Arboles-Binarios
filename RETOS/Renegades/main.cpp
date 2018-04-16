@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../../I-O_Abin/I_O_Abin.hpp"
-#include "../../Ejercicios_avanzados_Abin/Ejercicios_avanzados_Abin.hpp"
+#include "Renegades.hpp"
 
 using namespace std;
 
