@@ -1,7 +1,7 @@
 # RETO 1:
 ## Renegados  
 Se dice que un nodo es renegado cuando va encontra de los demás. Dado un Árbol Binario, calcular el número de nodos renegados que hay en dicho árbol.  
-Para simplificar el problema se dará un Árbol de booleanos.
+Para simplificar el problema se dará un Árbol Binario de caracteres.
 #  
 Esta carpeta contiene:  
 
