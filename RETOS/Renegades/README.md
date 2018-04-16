@@ -13,7 +13,7 @@ Esta carpeta contiene:
       Archivo que guarda el Árbol Binario de Renegados.  
       
 Ejemplo del Árbol guardado en *abin.dat*:      
-![Abin](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
+![Abin](http://img.fenixzone.net/i/5QPmsR1.jpeg)
 
 //Árbol Binario de Renegados en preorden tomando como fin #
 #  
