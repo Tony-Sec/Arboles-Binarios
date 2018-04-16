@@ -10,7 +10,8 @@ Esta carpeta contiene:
       
   * **`main.cpp`**  
       Ejemplo de como utilizar la Biblioteca *`Renegades.hpp`*.  
-      Nota: **`abin_renegades.dat`**  está en la carpeta I-O_Abin.  
+        
+      Nota: *`abin_renegades.dat`*  está en la carpeta I-O_Abin.  
       
 Ejemplo del Árbol guardado en *abin_renegades.dat*:      
 ![Abin](http://img.fenixzone.net/i/5QPmsR1.jpeg)
