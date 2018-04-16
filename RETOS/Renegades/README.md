@@ -17,4 +17,4 @@ Ejemplo del Árbol guardado en *abin.dat*:
 
 //Árbol Binario de Renegados en preorden tomando como fin #
 #  
-a b d h # # i # # e # # c f # # g j # # k # #
+0 1 1 # # 0 1 # # # 0 # # 
