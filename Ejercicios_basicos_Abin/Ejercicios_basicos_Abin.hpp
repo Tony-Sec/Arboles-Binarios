@@ -1,7 +1,3 @@
-//
-// Created by Antonio on 13/03/2018.
-//
-
 #ifndef ABIN_EJERCICIOS_BASICOS_HPP
 #define ABIN_EJERCICIOS_BASICOS_HPP
 
