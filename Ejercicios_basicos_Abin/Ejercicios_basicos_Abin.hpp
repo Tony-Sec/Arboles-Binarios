@@ -7,6 +7,7 @@
 //#include "../A_bin_vectorial_posiciones_relativas.hpp"
 #include <functional>
 
+/****************************************************************************************Determinar si un nodo es hoja*/
 
 template <typename T>
 bool is_sheet(const Abin<T>& A,typename Abin<T>::nodo n){
